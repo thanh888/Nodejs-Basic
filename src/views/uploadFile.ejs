@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/index.css" />
+
+</head>
+
+<body>
+
+    <div style="max-width: 500px; margin: 0 auto;">
+        <h1>Select image to upload:</h1><br><br>
+        <form action="/upload-file" method="post" enctype="multipart/form-data">
+            <h4>Upload single file</h4><br>
+            <input type="file" name="profile_pic"><br><br>
+            <input type="submit" value="Submit" name="submit">
+        </form>
+
+        <form action="/upload-multy-file" method="post" enctype="multipart/form-data">
+            <h4>Upload multiple file</h4><br>
+            <input type="file" multiple name="fileToUpload" id="fileToUpload"><br><br>
+            <input type="submit" value="Submit" name="submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
